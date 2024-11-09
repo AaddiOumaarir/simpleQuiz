@@ -1,5 +1,5 @@
-#include <iostream>
-using namespace std;
+//#include <iostream>
+//using namespace std;
 // a program that adds two numbers 
 /*int main() {
 	float number1, number2;
