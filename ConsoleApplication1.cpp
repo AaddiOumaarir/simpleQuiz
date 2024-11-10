@@ -167,7 +167,7 @@ int main() {
 }*/
 
 int main() {
-	int number;
+	long long int number;
 	cout << "please enter a number : ";
 	cin >> number;
 	if (number == 0) {
