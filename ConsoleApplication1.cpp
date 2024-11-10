@@ -67,7 +67,7 @@ void main() {
 
 	system("pause>0");
 }*/
-
+/*
 #include <iostream>
 using namespace std;
 int main() {
@@ -97,4 +97,91 @@ int main() {
 	else
 		cout << "operation non valide";
 
+}*/
+
+#include <iostream>
+using namespace std;
+/*
+int main() {
+	float num1, num2;
+	char operation;
+	
+
+	cout << "ADDI'S CALCULATOR" << endl;
+	cin >> num1 >> operation >> num2;
+	float isNum1Int = int(num1) == num1, isNum2Int = int(num2) == num2;
+	switch (operation) {
+
+	case '-': cout << num1 << operation << num2 << "=" << num1 - num2; break;
+
+	case '+': cout << num1 << operation << num2 << "=" << num1 + num2; break;
+
+	case '*': cout << num1 << operation << num2 << "=" << num1 * num2; break;
+
+	case '/': cout << num1 << operation << num2 << "=" << num1 / num2; break;
+    
+	case '%':
+		if (isNum1Int && isNum2Int)
+			cout << num1 << operation << num2 << "=" << int(num1) % int(num2);
+		else
+			cout << "sorry one or both numbers are not integers"; 
+		break;
+
+	default:
+		cout << "Fuck you hacker ";
+
+
+	}
+
+	system("pause>0");
+}*/
+/*
+int main() {
+	int year, month;
+	cout << " please enter a year and a month: ";
+	cin >> year >> month;
+
+	switch (month) {
+	case 2:
+		if (year % 4 == 0 && year % 100 != 0 || year % 400) // leap year condition
+			cout << " 29 days" << endl;
+		else
+			cout << " 28 days ";
+		break;
+	case 1:
+	case 3:
+	case 5:
+	case 7:
+	case 8:
+	case 10:
+	case 12: cout << " 31 days"; break;
+	case 4:
+	case 6:
+	case 9:
+	case 11: cout << " 30 days"; break;
+
+	default: cout << "Not valid year or month";
+
+	}
+
+}*/
+
+int main() {
+	int number;
+	cout << "please enter a number : ";
+	cin >> number;
+	if (number == 0) {
+		cout << " you have entered 0";
+	}
+	else {
+		if (number < 0) {
+			number = -1 * number;
+		}
+		int counter = 0;
+		while (number > 0) {
+			number = number / 10;
+			++counter;
+		}
+		cout << "The number of digits is : " << counter;
+	}
 }
