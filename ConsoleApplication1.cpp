@@ -165,7 +165,7 @@ int main() {
 	}
 
 }*/
-
+/*
 int main() {
 	long long int number;
 	cout << "please enter a number : ";
@@ -184,4 +184,56 @@ int main() {
 		}
 		cout << "The number of digits is : " << counter;
 	}
+}*/
+/*
+int main() {
+	int number;
+	int reversedNumber = 0;
+	cout << "Enter a number to reverse: ";
+	cin >> number;
+	while (number > 0){
+		reversedNumber *= 10;
+		int rest = number % 10;
+		reversedNumber += rest;
+		number /= 10;
+		
+
+	}
+	cout << reversedNumber;
+	system("pause>0");
+
+}*/
+/*
+int main() {
+	int pin, userPin = 1234, errorCounter = 0, leftTries = 3;
+	cout << "Pin: ";
+	do {
+		cin >> pin;
+		if (pin != userPin) {
+			errorCounter++;
+			if (errorCounter < 3){
+				cout << "Wrong pin. You have " << --leftTries << " tries left.  Please try again: ";
+
+			}
+			
+		}
+	} while (errorCounter<3 && pin != userPin);
+	if (errorCounter < 3) {
+		cout << "App is loading...";
+	}
+	else {
+		cout << "Blocked!!!";
+	}
+	system("pause>0");
+
+}*/
+
+int main() {
+	int factoriel = 1, number;
+	cout << "Number: ";
+	cin >> number;
+	for (int i = 1; i <= number; i++){
+		factoriel *= i;
+	}
+	cout << "the factorial of 12 is: " << factoriel;
 }
