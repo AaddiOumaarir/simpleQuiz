@@ -227,7 +227,7 @@ int main() {
 	system("pause>0");
 
 }*/
-
+/*
 int main() {
 	int factoriel = 1, number;
 	cout << "Number: ";
@@ -236,4 +236,36 @@ int main() {
 		factoriel *= i;
 	}
 	cout << "the factorial of 12 is: " << factoriel;
+}*/
+/*
+int main() {
+	float grade, averageGrade = 0;
+	
+	for (int i = 0; i < 3; i++) {
+		do {
+			cout << "enter grade"<<i+1<<": ";
+			cin >> grade;
+			
+		} while ((grade < 1 or grade > 5));
+		averageGrade += grade;
+	}
+	cout << "The average grade is : "<< averageGrade / 3;
+	system("pause>0");
+}*/
+
+int main() {
+	cout << "**MULTIPLICATION TABLE**" << endl;
+	for (int i = 1; i <= 10; i++) {
+		for (int j = 1; j <= 10; j++) {
+			cout << i << "x" << j << " = " << i * j << endl;
+		}
+		cout << "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ" << endl;
+	}
+	system("pause>0");
 }
+
+
+
+
+
+
