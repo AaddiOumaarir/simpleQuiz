@@ -100,6 +100,7 @@ int main() {
 }*/
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 /*
 int main() {
@@ -252,7 +253,7 @@ int main() {
 	cout << "The average grade is : "<< averageGrade / 3;
 	system("pause>0");
 }*/
-
+/*
 int main() {
 	cout << "**MULTIPLICATION TABLE**" << endl;
 	for (int i = 1; i <= 10; i++) {
@@ -263,8 +264,45 @@ int main() {
 	}
 	system("pause>0");
 }
+*/
+/*
+int main() {
+	int height, width;
+	char symbol;
+	cout << "enter height: ";
+	cin >> height;
+	cout << "enter width: ";
+	cin >> width;
+	cout << "enter symbol: ";
+	cin >> symbol;
 
 
+	for (int i = 0; i < height; i++) {
+		for (int j = 0; j < width; j++) {
+			cout << setw(3) << symbol;
+		}
+		cout << endl;
+	
+	}
+	system("pause>0");
+}*/
+
+
+int main() {
+	int row;
+	char symbol;
+
+	cout << "enter row: ";
+	cin >> row;
+	cout << "enter symbol: ";
+	cin >> symbol;
+	for (int r = 0; r <= row; r++) {
+		for (int c = 0; c <= r; c++) {
+			cout << setw(3) << symbol;
+		}
+		cout << endl;
+	}
+}
 
 
 
